@@ -1,0 +1,6 @@
+[base]
+name=redhat
+baseurl=file:///mnt/iso
+enabled=1
+gpgcheck=0
+gpgky=file:///mnt/iso/RPM-GPG-KEY-redhat-release
