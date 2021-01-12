@@ -35,21 +35,29 @@ class Solution(object):
                     lst[i], lst[j] = lst[j], lst[i]
             if lst[k] > lst[i]:
                 lst[i],lst[k] = lst[k], lst[i]
-    #        import pdb; pdb.set_trace()
+            print('-----1')
+            print(lst)
+            #        import pdb; pdb.set_trace()
             back_trace(begin, i-1)
+            print('------2')
+            print(lst)
             back_trace(i+1, end)
+            print('------3')
             print(lst)
 
-        print(lst)
         begin = 0
         end = len(lst) - 1
         back_trace(begin, end)
-        print(lst)
 
 if __name__ == "__main__":
+    import random
     lst = [8,9,1,3,5,7,2,4,6]
+    import pdb;
+    pdb.set_trace()
+#    random.shuffle(lst)
+    print(lst)
     s = Solution()
-    import pdb; pdb.set_trace()
+
     s.sort(lst)
 
 
